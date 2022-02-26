@@ -9,6 +9,7 @@ export type Props = {
   height: number;
   offset: number;
   bottom?: boolean;
+  color?: string;
 };
 
 const WavyBackground: React.FC<Props> = ({
@@ -17,6 +18,7 @@ const WavyBackground: React.FC<Props> = ({
   width,
   height,
   offset,
+  color = 'black',
   bottom = false,
 }) => {
   const [path, setPath] = React.useState<string | undefined>();
@@ -38,7 +40,7 @@ const WavyBackground: React.FC<Props> = ({
 
   React.useEffect(() => {
     getPath();
-  }, [path, frequency, amplitude, width, height, offset, bottom]);
+  }, [path, frequency, amplitude, width, height, offset, bottom, color]);
 
   return (
     <View style={{ transform: [{ rotate: bottom ? '180deg' : '0deg' }] }}>
@@ -48,7 +50,7 @@ const WavyBackground: React.FC<Props> = ({
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
       >
-        <Polygon points={path} fill="black" />
+        <Polygon points={path} fill={color} />
       </Svg>
     </View>
   );
