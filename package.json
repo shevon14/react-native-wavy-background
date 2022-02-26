@@ -1,6 +1,6 @@
 {
   "name": "react-native-wavy-background",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A react native component that let you to add a wavy background UI.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
