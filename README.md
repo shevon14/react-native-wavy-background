@@ -11,11 +11,17 @@ npm install react-native-wavy-background
 ## Usage
 
 ```js
-import { multiply } from "react-native-wavy-background";
+import WavyBackground from "react-native-wavy-background";
 
 // ...
 
-const result = await multiply(3, 7);
+<WavyBackground
+    frequency={1}
+    amplitude={10}
+    width={1500}
+    height={400}
+    offset={50}
+/>
 ```
 
 ## Contributing
