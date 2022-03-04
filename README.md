@@ -68,7 +68,8 @@ import WavyBackground from "react-native-wavy-background";
 </View>
 ```
 
-#### REACT NATIVE SVG LINKING IF NEEDED
+### REACT NATIVE SVG LINKING | To Fix -
+### Invariant Violation: requireNativeComponent: "RNSVGPath" was not found in the UIManager
 
 ##### Android pre RN 0.60
 
